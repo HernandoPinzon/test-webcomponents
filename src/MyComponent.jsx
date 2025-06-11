@@ -1,5 +1,4 @@
-// src/MyComponent.jsx
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const MyComponent = ({ userId }) => {
   const [user, setUser] = useState(null);
@@ -37,6 +36,9 @@ const MyComponent = ({ userId }) => {
         placeholder="Ingresa tu nombre"
         onChange={(e) => setName(e.target.value)}
       />
+      <button className="button" onClick={() => alert(`Hola ${name}`)}>
+        Saludar
+      </button>
     </div>
   );
 };

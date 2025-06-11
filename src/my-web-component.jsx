@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import MyComponent from "./MyComponent.jsx";
+import styles from './my-component.css?inline';
 
 class MyWebComponent extends HTMLElement {
   static get observedAttributes() {
@@ -11,6 +12,10 @@ class MyWebComponent extends HTMLElement {
     super();
     this._root = this.attachShadow({ mode: "open" });
     this._reactRoot = null;
+
+    const style = document.createElement('style');
+    style.textContent = styles;
+    this._root.appendChild(style);
   }
 
   connectedCallback() {
