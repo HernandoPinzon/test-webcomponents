@@ -16898,7 +16898,7 @@ const Xv = A.forwardRef(
   ({ className: t, ...r }, a) => {
     var u;
     const i = ((u = document.querySelector("chat-bot")) == null ? void 0 : u.shadowRoot) ?? void 0;
-    return console.log("AlertDialogContent shadowRoot:", i), /* @__PURE__ */ _.jsxs(V3, { container: i, children: [
+    return /* @__PURE__ */ _.jsxs(V3, { container: i, children: [
       /* @__PURE__ */ _.jsx(Gv, {}),
       /* @__PURE__ */ _.jsx(
         Hv,
@@ -16999,7 +16999,7 @@ function P3({
   description: m,
   isBold: h
 }) {
-  return console.log("ConfirmationDialog rendered with open:", t), /* @__PURE__ */ _.jsx(q3, { open: t, children: /* @__PURE__ */ _.jsxs(Xv, { className: "block bg-black p-0", children: [
+  return /* @__PURE__ */ _.jsx(q3, { open: t, children: /* @__PURE__ */ _.jsxs(Xv, { className: "block bg-black p-0", children: [
     /* @__PURE__ */ _.jsx(
       "button",
       {
@@ -26781,8 +26781,8 @@ function P6({ companyid: t, userName: r }) {
     j(!1);
   };
   function Z() {
-    console.log("startTimer"), Q.current && clearTimeout(Q.current), I.current && clearTimeout(I.current), Q.current = setTimeout(() => {
-      console.log("timeoutMessage"), m((re) => [
+    Q.current && clearTimeout(Q.current), I.current && clearTimeout(I.current), Q.current = setTimeout(() => {
+      m((re) => [
         ...re,
         {
           id: Date.now().toString(),
