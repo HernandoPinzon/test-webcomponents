@@ -16852,7 +16852,7 @@ const fy = (t) => typeof t == "boolean" ? `${t}` : t === 0 ? "0" : t, dy = M0, H
   }, []);
   return dy(t, c, m, a == null ? void 0 : a.class, a == null ? void 0 : a.className);
 }, Fv = H3(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex items-center cursor-pointer justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
@@ -16982,7 +16982,7 @@ const Jv = A.forwardRef(({ className: t, ...r }, a) => /* @__PURE__ */ _.jsx(
   Vv,
   {
     ref: a,
-    className: at("cancel-button modal-button mt-2 sm:mt-0", t),
+    className: at("cancel-button cursor-pointer modal-button mt-2 sm:mt-0", t),
     ...r
   }
 ));
