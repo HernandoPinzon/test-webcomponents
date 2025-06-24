@@ -27207,12 +27207,9 @@ class hR extends HTMLElement {
     this.renderReact();
   }
   renderReact() {
-    const l = this.getAttribute("companyId"), i = this.getAttribute("userName"), s = this.getAttribute("apiUrl");
-    if (!i) {
-      console.error("ChatbotWebComponent: 'userName' attribute is required.");
-      return;
-    }
-    if (!l) {
+    let l = this.getAttribute("userName");
+    const i = this.getAttribute("companyId"), s = this.getAttribute("apiUrl");
+    if (l || (console.warn("ChatbotWebComponent: 'userName' attribute is required."), l = "Default User"), !i) {
       console.error("ChatbotWebComponent: 'companyId' attribute is required.");
       return;
     }
@@ -27220,7 +27217,7 @@ class hR extends HTMLElement {
       console.error("ChatbotWebComponent: 'apiUrl' attribute is required.");
       return;
     }
-    this._reactRoot || (this._reactRoot = mS.createRoot(this._root)), this._reactRoot.render(/* @__PURE__ */ _.jsx(dR, { apiUrl: s, companyId: l, userName: i }));
+    this._reactRoot || (this._reactRoot = mS.createRoot(this._root)), this._reactRoot.render(/* @__PURE__ */ _.jsx(dR, { apiUrl: s, companyId: i, userName: l }));
   }
 }
 customElements.define("chat-bot", hR);
