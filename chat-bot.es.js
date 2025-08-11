@@ -26845,7 +26845,7 @@ function h0({
                   type: "button",
                   onClick: (g) => g.stopPropagation(),
                   children: [
-                    /* @__PURE__ */ _.jsx("a", { className: "course-in-route-text", href: p.url, children: p.name }),
+                    /* @__PURE__ */ _.jsx("a", { target: "_blank", className: "course-in-route-text", href: p.url, children: p.name }),
                     /* @__PURE__ */ _.jsx(ny, { className: "text-gray-500", size: 18 })
                   ]
                 }
