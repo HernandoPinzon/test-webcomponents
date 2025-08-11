@@ -26975,10 +26975,10 @@ function uR(t, r) {
   });
 }
 function is(t) {
-  return `narp/students/courses/${t}/detail`;
+  return `/narp/students/courses/${t}/detail`;
 }
 function G1(t) {
-  return `narp/students/route/${t}/detail`;
+  return `/narp/students/route/${t}/detail`;
 }
 function cR() {
   return /* @__PURE__ */ _.jsxs("div", { className: "flex flex-col justify-end", children: [
