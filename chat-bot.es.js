@@ -26871,7 +26871,7 @@ const oR = ({ children: t, ...r }) => /* @__PURE__ */ _.jsx("a", { ...r, target:
 function sR({ content: t, buttons: r, setting: l, index: i }) {
   var A, C;
   let s, u = !1;
-  t = t.replace(/^(?:\w+)?\s*\r?\n?/, "").replace(/\r?\n?$/, "").trim();
+  t = t.replace(/^```(?:json)?\s*\r?\n?/, "").replace(/\r?\n?```$/, "").trim();
   try {
     s = JSON.parse(t);
   } catch {
