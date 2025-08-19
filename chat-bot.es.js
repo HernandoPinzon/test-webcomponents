@@ -26839,13 +26839,15 @@ function h0({
               ] }),
               /* @__PURE__ */ _.jsx(gE, { color: "#475D92", fill: "#475D92", size: 12 }),
               /* @__PURE__ */ _.jsxs(
-                "button",
+                "a",
                 {
-                  className: "item no-children my-2 p-4",
+                  target: "_blank",
+                  href: p.url,
+                  className: "item no-children my-2 p-4 cursor-pointer",
                   type: "button",
                   onClick: (g) => g.stopPropagation(),
                   children: [
-                    /* @__PURE__ */ _.jsx("a", { target: "_blank", className: "course-in-route-text", href: p.url, children: p.name }),
+                    /* @__PURE__ */ _.jsx("a", { className: "course-in-route-text", children: p.name }),
                     /* @__PURE__ */ _.jsx(ny, { className: "text-gray-500", size: 18 })
                   ]
                 }
