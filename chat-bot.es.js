@@ -26833,7 +26833,7 @@ function h0({
               i.includes(c.id) ? /* @__PURE__ */ _.jsx(cE, { className: "text-gray-500", size: 18 }) : /* @__PURE__ */ _.jsx(oE, { className: "text-gray-500", size: 18 })
             ] }),
             i.includes(c.id) && /* @__PURE__ */ _.jsx("ul", { className: "mt-2 w-full", children: c.courses.map((d, m) => /* @__PURE__ */ _.jsxs("li", { className: "relative flex items-center gap-2", children: [
-              m === 0 && /* @__PURE__ */ _.jsx("div", { className: "absolute left-[5px] top-[50%] h-[50%] w-[2px] bg-[#475D92]" }),
+              m === 0 && c.courses.length != 1 && /* @__PURE__ */ _.jsx("div", { className: "absolute left-[5px] top-[50%] h-[50%] w-[2px] bg-[#475D92]" }),
               m !== 0 && /* @__PURE__ */ _.jsxs(_.Fragment, { children: [
                 /* @__PURE__ */ _.jsx("div", { className: "absolute left-[5px] top-[-0px] h-[50%] w-[2px] bg-[#475D92]" }),
                 /* @__PURE__ */ _.jsx("div", { className: "absolute left-[5px] top-[-50%] h-[100%] w-[2px] bg-[#475D92]" })
