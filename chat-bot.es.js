@@ -12468,10 +12468,10 @@ async function K2(t, r, l) {
 const J2 = "Tu pregunta contiene lenguaje inapropiado. Por favor, reformúlala.", $2 = "Tu chat ha sido suspendido por lenguaje inapropiado. Por favor, inténtalo de nuevo más tarde.", W2 = "Hubo un problema al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde", eE = `¡Hola! Soy TutorIA, tu asistente virtual. Estoy aquí para:
       
 
-1️⃣    Ayudarte a encontrar rutas de aprendizaje sugeridas.
+ •    Ayudarte a encontrar rutas de aprendizaje sugeridas.
       
 
-2️⃣     Recomendarte cursos según tus intereses. 
+ •     Recomendarte cursos según tus intereses. 
       
 
 Escribe qué te interesa aprender o explora sugerencias.`, Yo = {
