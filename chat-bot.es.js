@@ -26914,8 +26914,16 @@ function sR({ content: t, buttons: r, setting: l, index: i }) {
   });
   return c.includes("Contactar a un tutor experto") && (c = c.replace(
     "Contactar a un tutor experto",
-    "[Contactar a un tutor experto](https://www.google.com)"
-  )), console.log("courses content:", b), console.log("routes content:", v), /* @__PURE__ */ _.jsxs("div", { className: "items-start justify-end", children: [
+    `
+
+[Contactar a un tutor experto](https://www.google.com)
+
+`
+  ), c += `
+
+[Ver todos los cursos](https://www.google.com)
+
+`), console.log("courses content:", b), console.log("routes content:", v), /* @__PURE__ */ _.jsxs("div", { className: "items-start justify-end", children: [
     /* @__PURE__ */ _.jsxs("div", { className: "mb-2 flex flex-col justify-end", children: [
       /* @__PURE__ */ _.jsx("div", { className: "flex flex-row", children: /* @__PURE__ */ _.jsx(Ss, { children: /* @__PURE__ */ _.jsx(yd, { className: "h-[32px] w-[32px]", variant: "light" }) }) }),
       /* @__PURE__ */ _.jsx("p", { className: "font-base mt-1 font-bold leading-[24px] tracking-[0.15px]", children: "TutorIA" })
