@@ -26921,7 +26921,7 @@ function sR({ content: t, buttons: r, setting: l, index: i }) {
 `
   ), c += `
 
-[Ver todos los cursos](https://www.google.com)
+[Ver todos los cursos](` + l.baseUrl + `/narp/students/explore)
 
 `), console.log("courses content:", b), console.log("routes content:", v), /* @__PURE__ */ _.jsxs("div", { className: "items-start justify-end", children: [
     /* @__PURE__ */ _.jsxs("div", { className: "mb-2 flex flex-col justify-end", children: [
