@@ -27049,16 +27049,16 @@ function fR({ messages: t, setting: r, isLoading: l }) {
 }
 const dR = () => {
   const t = localStorage.getItem("theme") || "dark";
-  document.documentElement.setAttribute("data-theme-chatbot", t), E.useEffect(() => {
+  document.documentElement.setAttribute("data-theme-chatbot", t), console.log("Tema inicial del chatbot:", t), E.useEffect(() => {
     if (!window.__themeIntercepted) {
       const l = localStorage.setItem;
-      localStorage.setItem = function(i, s) {
+      console.log('Interceptando cambios en localStorage para la clave "theme"'), localStorage.setItem = function(i, s) {
         l.call(this, i, s), i === "theme" && window.dispatchEvent(new CustomEvent("themeChange", { detail: s }));
       }, window.__themeIntercepted = !0;
     }
     const r = (l) => {
       const i = l.detail;
-      document.documentElement.setAttribute("data-theme-chatbot", i);
+      document.documentElement.setAttribute("data-theme-chatbot", i), console.log("Tema cambiado del chatbot:", i);
     };
     return window.addEventListener("themeChange", r), () => {
       window.removeEventListener("themeChange", r);
