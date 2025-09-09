@@ -27050,7 +27050,7 @@ function fR({ messages: t, setting: r, isLoading: l }) {
 const dR = () => {
   var l, i;
   const t = localStorage.getItem("theme") || "dark", r = ((l = document.querySelector("chat-bot")) == null ? void 0 : l.shadowRoot) ?? void 0;
-  r && (console.log("Elemento host del shadow DOM encontrado:", r), (i = r.activeElement) == null || i.setAttribute("data-theme-chatbot", t)), document.documentElement.setAttribute("data-theme-chatbot", t), console.log("Tema inicial del chatbot:", t), E.useEffect(() => {
+  r && (console.log("Elemento host del shadow DOM encontrado:", r), (i = r.lastElementChild) == null || i.setAttribute("data-theme-chatbot", t)), document.documentElement.setAttribute("data-theme-chatbot", t), console.log("Tema inicial del chatbot:", t), E.useEffect(() => {
     if (!window.__themeIntercepted) {
       const u = localStorage.setItem;
       console.log('Interceptando cambios en localStorage para la clave "theme"'), localStorage.setItem = function(c, d) {
