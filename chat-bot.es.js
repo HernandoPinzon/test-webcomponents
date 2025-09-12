@@ -12490,7 +12490,7 @@ Escribe qué te interesa aprender o explora sugerencias.`, Yo = {
     userMessage: "#44464F"
   },
   headerText: "TutorIA",
-  userName: "Default User Name",
+  userName: " ",
   baseUrl: "https://narpdev.opitech.com.co/"
 };
 /**
@@ -27250,7 +27250,7 @@ class gR extends HTMLElement {
   renderReact() {
     let l = this.getAttribute("userName");
     const i = this.getAttribute("companyId"), s = this.getAttribute("apiUrl");
-    if (l || (console.warn("ChatbotWebComponent: 'userName' attribute is required."), l = "Default User"), !i) {
+    if (l || (console.warn("ChatbotWebComponent: 'userName' attribute is required."), l = " "), !i) {
       console.error("ChatbotWebComponent: 'companyId' attribute is required.");
       return;
     }
